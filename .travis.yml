@@ -1,0 +1,20 @@
+language: node_js
+
+node_js:
+   - node # will use latest node
+
+before_script: # commands to run before the build step
+   - npm install -g --silent @angular/cli
+
+script: # the build step
+   - ng build --prod
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  repo: https://github.com/jr33d/jr33d.github.io
+  target-branch: master
+  on:
+    branch: master
