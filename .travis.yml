@@ -9,10 +9,8 @@ deploy:
   provider: pages
   skip-cleanup: true
   keep-history: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   repo: https://github.com/jr33d/jr33d.github.io
   target-branch: master
   on:
     branch: master
-env:
-  global:
-    secure: D40EmRFyAKb8YZ+fM2gGUIPBvqbJej4XRiOOHXEtu+C5oARB8Pr58uS2+QSZwiVmFltblTHYi7wdB11SjXOYIMi46LhVdfsXEAurEWrMU3Wuz9QXHdZQBjxlA79Y5CrbclMNltx9/FJE6jNNFXB5SABWgWiAztN/LEwwbOYY6Llu002Lj7Uxf79MG3icbp/58LqpAdqdGFPIEMFIArMrM9qPNXo87Ht3N+Fmj3eBP7bZOa4YDsWoob9f7CFjKrD8CIGiRZabmUOfzDfWOALt/EIabt68520I1OVi8zAABVfOca2LI4/bONTablPxPD4NGt6zQJmrpYAKe1UlkPUImswKGGWtGPahe0y6kEReea5W8B2kLAfmr9Apy3qNs4f6TJFEy7jNPYPuUbTZjhAqVlE79vIwl/7y1kpjMElFX1YCCjtBV2Dx0PXoJfjPnZhtfbU/Zwu8tR+SaYfb6ETVDm2NMkmVXucYwJ46rFQXG6fMMtzv1P4rZDM5y4JA7vbPcYi+/8SIlzIO3FkvAuqcstg/reUOyeexUFBIVVqBKaUpqhCKqstGCuV36AKk0ebVFReedxmFbCxOCj4e9XRRgw1aVYWTuGm/lJ2YJJCKoIKCUKMXZ2kwgOPdYEGyHUpZ/n5oFWNfgcJlGm1rX/mQKzohvc5moFRHsGl36jm1aWs=
