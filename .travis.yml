@@ -12,7 +12,7 @@ script: # the build step
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+
   keep-history: true
   repo: https://github.com/jr33d/jr33d.github.io
   target-branch: master
