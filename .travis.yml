@@ -9,9 +9,9 @@ before_deploy:
 - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: pages
-  file: $TRAVIS_BUILD_DIR+"/**/*"
   skip_cleanup: true
   keep-history: true
+  local-dir: $TRAVIS_BUILD_DIR
   repo: jr33d/jr33d.github.io
   target-branch: master
   on:
