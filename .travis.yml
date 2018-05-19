@@ -5,15 +5,17 @@ before_script:
 - npm install -g --silent @angular/cli
 script:
 - ng build --prod
+before_deploy:
+    - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
-  provider: pages
-  skip-cleanup: true
+  provider: releases
+  user: $G_USER
+  password: $G_PASS
+  file: $TRAVIS_BUILD_DIR+"/**/*"
+  skip_cleanup: true
   keep-history: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   repo: https://github.com/jr33d/jr33d.github.io
   target-branch: master
   on:
+    tags: true
     branch: master
-before_install:
-- openssl aes-256-cbc -K $encrypted_1385eb33ed9a_key -iv $encrypted_1385eb33ed9a_iv
-  -in id_rsa.enc -out id_rsa -d
