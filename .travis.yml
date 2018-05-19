@@ -17,5 +17,4 @@ deploy:
   repo: https://github.com/jr33d/jr33d.github.io
   target-branch: master
   on:
-    tags: true
     branch: master
