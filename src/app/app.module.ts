@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { NavSelectionComponent } from './nav-selection/nav-selection.component';
 import { NavOptionComponent } from './nav-option/nav-option.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
-   declarations: [AppComponent, NavSelectionComponent, NavOptionComponent, TimelineComponent],
+   declarations: [AppComponent, NavigationComponent, NavSelectionComponent, NavOptionComponent, TimelineComponent],
    imports: [BrowserModule, AppRoutingModule, NgxChronologyModule],
    providers: [],
    bootstrap: [AppComponent],
