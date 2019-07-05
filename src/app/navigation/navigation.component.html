@@ -1,21 +1,51 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" routerLink="/">JR33D Developer Profile</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a routerLink="/index" routerLinkActive="active" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="/timeline" routerLinkActive="active" class="nav-link">Timeline</a>
-          </li>
-          <li class="nav-item">
-            <a href="/ngx-chronology" class="nav-link">NGX-Chronology</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<header class="col-md-12">
+    <nav>
+        <div class="row">
+            <!-- navigation bar -->
+            <div class="col-md-7 col-sm-8 col-xs-4">
+                <ul class="tabs">
+                    <li class="tab">
+                        <a class="home-btn" routerLink="/home" routerLinkActive="active">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a routerLink="/resume" routerLinkActive="active">RESUME</a>
+                    </li>
+                    <li class="tab">
+                        <a routerLink="/portfolio" routerLinkActive="active">PORTFOLIO</a>
+                    </li>
+                    <li class="tab">
+                        <a routerLink="/blog" routerLinkActive="active">BLOG</a>
+                    </li>
+                    <li class="tab">
+                        <a routerLink="/contact" routerLinkActive="active">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5 col-sm-4 col-xs-8 dynamic">
+                <a href="mailto:jreed129@gmail.com"
+                    class="pull-right site-btn icon hidden-xs">Hire Me <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </a>
+                <div class="hamburger pull-right hidden-lg hidden-md">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="menuout">
+            <div class="menuin" style="display: none;">
+                <ul class="tabs">
+                    <li class="tab">
+                        <a class="home-btn" href="#home"
+                            ><i class="fa fa-home" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="tab"><a routerLink="/resume" routerLinkActive="active">RESUME</a></li>
+                    <li class="tab"><a routerLink="/portfolio" routerLinkActive="active">PORTFOLIO</a></li>
+                    <li class="tab"><a routerLink="/blog" routerLinkActive="active">BLOG</a></li>
+                    <li class="tab"><a routerLink="/contact" routerLinkActive="active">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
