@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'jr-root',
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'jr';
+  title = 'build-jr33d-io';
 }

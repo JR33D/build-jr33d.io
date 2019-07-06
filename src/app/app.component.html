@@ -1,2 +1,35 @@
-<jr-navigation></jr-navigation>
-<router-outlet></router-outlet>
+<!-- Wrapper -->
+<div class="wrapper top_60 container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4">
+            <!-- Profile Section -->
+            <jlr-profile></jlr-profile>
+        </div>
+        <!-- Page Tab Container Div -->
+        <div id="ajax-tab-container" class="col-lg-9 col-md-8 tab-container">
+            <jlr-navigation></jlr-navigation>
+            <!-- Header -->
+            <div class="row">
+                <!-- Page Content -->
+                <div class="col-md-12">
+                    <div id="content" class="panel-container">
+                        <!-- Home Page -->
+                        <!-- Resume Page -->
+                        <!-- Portfolio Page -->
+                        <!-- Blog Page -->
+                        <!-- Contact Page -->
+                        <router-outlet></router-outlet>
+                    </div>
+                    <!-- Content - End -->
+                </div>
+                <!-- col-md-12 end -->
+            </div>
+            <!-- row end -->
+            <!-- Footer -->
+            <jlr-footer></jlr-footer>
+        </div>
+        <!-- Tab Container - End -->
+    </div>
+    <!-- Row - End -->
+</div>
+<!-- Wrapper - End -->
