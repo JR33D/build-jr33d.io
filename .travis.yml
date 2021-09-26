@@ -10,12 +10,13 @@ deploy:
   on:
     branch: master
   provider: pages
-  skip_cleanup: true
-  keep-history: true
-  local-dir: "/dist/jr33d-io"
-  github_token: e49wD5eK5kKERXGE3cbsgRKEmWWvhG/IGjER45E5q+YsSAJa32ZJvzcj+EXIjAfiGceH+9/b+LwdkigwTpaao/Rq+WVXwQLdoQhz9FoMS0i0junmbDJeCwRP28YE3FjyzSl7a2mIMba1wKiwiDtWrgRr+zoIFarMovfm+usOSRwSjnXn19+SqZVPVeE3FIg/zET/j8yBgyJTKGyYRe8q54b14dlB5glO9DfbUQipKi82Bx2ACAfOVE4/iwAlV3n+roLLwzno8uc8A7EK/vHrPTp8Gy9A9S2wnmWgWnJBDPqK35Hw6KCvbPGPbQMZGob044MPDA/kwT7lHCsayX6O07f990tK7HyK++UCV6lrISXq/aAhSOlM0OaAHBuFHZ27VvXxxXs3s9QlFjb7iT+ZDPDvupUSXvgg8w7z5zRH5QCNhiV+zE3Ka+JtuQEJ7JwsJBC6KZS+NfmQoO0bfVZrPTyfX5Tve2MEqfhS9hvKrQyJqLUqgt4xEGVcWWk8nkwEtAOREgXllxrxf3Z9SWqkQtZP3DdobZTorjJiMoTZjSTPg4Ef2ZPefepC521pLP8Y1j6OOBH4S9WlnnBCqjqhfN2uzFXGpsvyIdEEVgi12+HEAlgUuQy6kC1gbD50bveNW4PGS/Cc19E1LctI1f9zLQwYIYUdD2wAiuE681zUTQw=
+  strategy: git
+  cleanup: true
+  keep_history: true
+  local_dir: "/dist/jr33d-io"
+  token: e49wD5eK5kKERXGE3cbsgRKEmWWvhG/IGjER45E5q+YsSAJa32ZJvzcj+EXIjAfiGceH+9/b+LwdkigwTpaao/Rq+WVXwQLdoQhz9FoMS0i0junmbDJeCwRP28YE3FjyzSl7a2mIMba1wKiwiDtWrgRr+zoIFarMovfm+usOSRwSjnXn19+SqZVPVeE3FIg/zET/j8yBgyJTKGyYRe8q54b14dlB5glO9DfbUQipKi82Bx2ACAfOVE4/iwAlV3n+roLLwzno8uc8A7EK/vHrPTp8Gy9A9S2wnmWgWnJBDPqK35Hw6KCvbPGPbQMZGob044MPDA/kwT7lHCsayX6O07f990tK7HyK++UCV6lrISXq/aAhSOlM0OaAHBuFHZ27VvXxxXs3s9QlFjb7iT+ZDPDvupUSXvgg8w7z5zRH5QCNhiV+zE3Ka+JtuQEJ7JwsJBC6KZS+NfmQoO0bfVZrPTyfX5Tve2MEqfhS9hvKrQyJqLUqgt4xEGVcWWk8nkwEtAOREgXllxrxf3Z9SWqkQtZP3DdobZTorjJiMoTZjSTPg4Ef2ZPefepC521pLP8Y1j6OOBH4S9WlnnBCqjqhfN2uzFXGpsvyIdEEVgi12+HEAlgUuQy6kC1gbD50bveNW4PGS/Cc19E1LctI1f9zLQwYIYUdD2wAiuE681zUTQw=
   repo: jr33d/jr33d.github.io
-  target-branch: master
+  target_branch: master
 notifications:
   email:
     on_success: never
