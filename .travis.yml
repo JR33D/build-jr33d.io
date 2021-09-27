@@ -14,7 +14,7 @@ deploy:
   strategy: git
   cleanup: true
   keep_history: true
-  local_dir: "/dist/jr33d-io"
+  local_dir: dist/jr33d-io
   token: $GITHUB_TOKEN
   repo: jr33d/jr33d.github.io
   target_branch: master
